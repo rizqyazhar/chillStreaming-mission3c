@@ -8,6 +8,41 @@
     <link rel="stylesheet" href="/src/login.css">
 </head>
 <body>
-    
+    <div class="login-box">
+        <header>
+            <img src="/img/logo/chill-logo.svg" alt="chill-logo">
+            <div class="title">
+                <h3>Masuk</h3>
+                <p>Selamat datang kembali!</p>
+            </div>
+        </header>
+        <form>
+            <fieldset>
+                <div class="label-box">
+                    <label for="username">Username</label>
+                    <input class="input" type="text" id="username" name="username" placeholder="Masukkan username" required>
+                </div>
+                <div class="label-box">
+                    <label for="password">Password</label>
+                    <input class="input" type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+                    <button class="visibility-icon">
+                            <img src="/img/icon/visibility-off.svg">
+                    </button>
+                </div>
+            </fieldset>
+            <div class="links">
+                <p>Belum punya akun?<a href="#">Daftar</a></p>
+                <p><a href="#">Lupa kata sandi?</a></p>
+            </div>
+            <div class="button-box">
+                <button class="buttons">Masuk</button>
+                <p>Atau</p>
+                <button class="buttons">
+                    <img src="/img/icon/google-icon.svg">
+                    <span>Masuk dengan Google</span>
+                </button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

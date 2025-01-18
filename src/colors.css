@@ -16,6 +16,11 @@
     --body-background: #2F3334;
     --page-header-background: #181A1C;
     --extra-background: #3D4142;
+
+    --outline-border: rgba(231, 227, 252, 0.23);
+    --input-border: rgba(231, 227, 252, 0.22);
+    --input-field-bg: rgba(231, 227, 252, 0.04);
+    --chip-bg: rgba(231, 227, 252, 0.08);
   
     --info: #0586FF; 
     --info-pressed: #024DB7;
