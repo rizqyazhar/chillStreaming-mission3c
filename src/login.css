@@ -11,18 +11,31 @@ body {
     height: 100vh;
     background: url(/img/bg-img/bg-login.jpg) no-repeat center center fixed;
     background-size: cover;
+    filter: grayscale(10%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
 .login-box {
-    width: 529px;
-    height: 663px;
+    width: 429px;
+    height: 563px;
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 37px;
+    justify-content: center;
+    gap: 30px;
     background-color: #181A1CD6;
     border-radius: 16px;
 }
@@ -32,7 +45,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 37px;
+    gap: 20px;
 }
 
 .logo {
@@ -65,13 +78,13 @@ fieldset {
     border: none;
     display: flex;
     flex-direction: column;
-    gap: 37px;
+    gap: 30px;
 }
 
 .label-box {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 3px;
     color: var(--text-light-primary);
 }
 
@@ -83,12 +96,16 @@ fieldset {
 }
 
 .input {
-    height: 50px;
+    height: 40px;
     border-radius: 24px;
-    border: 1px solid var(--outline-border);
+    border: 1px solid var(--input-border);
     padding: 14px 20px;
     background-color: transparent;
     color: var(--text-light-secondary);
+}
+
+.input:focus {
+    outline-color: var(--outline-border);
 }
 
 .input::placeholder {
@@ -109,7 +126,7 @@ fieldset {
     cursor: pointer;
     position: absolute;
     right: 20px;
-    top: 47px;
+    top: 40px;
 }
 
 .visibility-icon img {
@@ -121,7 +138,7 @@ fieldset {
 .links {
     display: flex;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 4px;
 }
 
 .links p {
@@ -147,12 +164,12 @@ fieldset {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-top: 37px;
+    margin-top: 30px;
 }
 
 .buttons {
     width: 100%;
-    height: 50px;
+    height: 40px;
     border-radius: 24px;
     border: 1px solid var(--outline-border);
     background-color: transparent;
@@ -180,7 +197,7 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .google-icon {
@@ -190,17 +207,17 @@ fieldset {
 
 /* RESPONSIVE MEDIA QUERY */
 
-/* Extra small devices (phones, 600px and down) */
+/* mobile phone */
 @media only screen and (max-width: 600px) {
     .login-box {
         width: 306px;
         height: 384px;
-        padding: 23px 24px;
+        padding: 24px;
         gap: 20px;
     }
 
     header {
-        gap: 20px;    
+        gap: 10px;    
     }
 
     .logo {
@@ -209,25 +226,25 @@ fieldset {
     }
     
     .title {
-        gap: 4px;
+        gap: 2px;
         color: var(--text-light-primary);
         cursor: default;
     }
     
     .title h3 {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 25.2px;
     }
     
     .title p {
         font-weight: 400;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 14px;
     }
     
     fieldset {
-        gap: 20px;
+        gap: 10px;
     }
     
     .label-box {
@@ -235,7 +252,7 @@ fieldset {
     }
     
     .label-box label {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 14px;
     }
     
@@ -246,7 +263,7 @@ fieldset {
     }
     
     .input::placeholder {
-        font-size: 9px;
+        font-size: 10px;
         line-height: 12.9px;
         letter-spacing: 0.12px;
     }
@@ -259,7 +276,6 @@ fieldset {
     .visibility-icon img {
         width: 12px;
         height: 12px;
-    
     }
     
     .links {
@@ -287,7 +303,7 @@ fieldset {
         height: 30px;
         border-radius: 14px;
         font-weight: 600;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 14px;
     }
     
@@ -297,7 +313,7 @@ fieldset {
     }
     
     .buttons:last-of-type {
-        gap: 10px;
+        gap: 5px;
     }
 
     .google-icon {
