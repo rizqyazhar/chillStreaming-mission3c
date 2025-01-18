@@ -35,6 +35,11 @@ header {
     gap: 37px;
 }
 
+.logo {
+    width: 163px;
+    height: 44px;
+}
+
 .title {
     display: flex;
     flex-direction: column;
@@ -176,4 +181,127 @@ fieldset {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .login-box {
+        width: 306px;
+        height: 384px;
+        padding: 23px 24px;
+        gap: 20px;
+    }
+
+    header {
+        gap: 20px;    
+    }
+
+    .logo {
+        width: 94px;
+        height: 24px;
+    }
+    
+    .title {
+        gap: 4px;
+        color: var(--text-light-primary);
+        cursor: default;
+    }
+    
+    .title h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+    
+    .title p {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    fieldset {
+        gap: 20px;
+    }
+    
+    .label-box {
+        gap: 3.5px;
+    }
+    
+    .label-box label {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .input {
+        height: 28px;
+        padding: 4px 11.55px 8px;
+        border-radius: 12px;
+    }
+    
+    .input::placeholder {
+        font-size: 9px;
+        line-height: 12.9px;
+        letter-spacing: 0.12px;
+    }
+    
+    .visibility-icon {
+        right: 11.55px;
+        top: 25px;
+    }
+    
+    .visibility-icon img {
+        width: 12px;
+        height: 12px;
+    
+    }
+    
+    .links {
+        margin-top: 7px;
+    }
+    
+    .links p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .links a {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .button-box {
+        gap: 4px;
+        margin-top: 20px;
+    }
+    
+    .buttons {
+        width: 100%;
+        height: 30px;
+        border-radius: 14px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .button-box:nth-of-type(2) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .buttons:last-of-type {
+        gap: 10px;
+    }
+
+    .google-icon {
+        width: 13px;
+        height: 13px;
+    }
 }
