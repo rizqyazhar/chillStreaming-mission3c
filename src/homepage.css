@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    min-width: 1440px;
+}
+
 .header {
     top: 0;
     width: 100%;
@@ -62,11 +66,13 @@
 }
 
 .main {
+    width: 100%;
     background-color: var(--page-header-background);
     padding-bottom: 50px;
 }
 
 .hero-section {
+    width: 100%;
     height: 587px;
     background: url('/img/landscape/img-38.svg') no-repeat center center;
     background-size: cover;
@@ -203,7 +209,7 @@
 
 .continueStreaming-section {
     width: 100%;
-    height: 300px;
+    height: 309px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -230,7 +236,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: -22px;
     cursor: pointer;
 }
@@ -247,26 +253,34 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50px;
-    right: -29px;
+    top: 60px;
+    right: -22px;
     cursor: pointer;
 }
 
 .landscape-posters {
-    width: 100%;
-    height: 160px;
+    width: 1280px;
+    height: 162px;
     display: flex;
     gap: 24px;
     position: relative;
 }
 
-.landscape-posters img {
-    width: 281px;
-    height: 150px;
+.landscape-box {
+    width: 302px;
+    height: 162px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.landscape-posters div {
-    position: relative;
+.landscape-box:hover {
+    transform: scale(0.95);
+}
+
+.landscape-box img {
+    width: 100%;
+    height: 100%;
 }
 
 .landscape-posters div .description-film {
@@ -283,15 +297,6 @@
     font-size: 18px;
     line-height: 21.6px;
     color: var(--text-light-primary);
-}
-
-.landscape-box {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.landscape-box:hover {
-    transform: scale(0.95);
 }
 
 .star {
@@ -311,7 +316,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 150px;
+    top: 160px;
     left: -22px;
     cursor: pointer;
 }
@@ -328,8 +333,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 150px;
-    right: -29px;
+    top: 160px;
+    right: -22px;
     cursor: pointer;
 }
 
@@ -353,29 +358,31 @@
 }
 
 .potrait-posters {
-    width: 100%;
-    height: 355px;
+    width: 1280px;
+    height: 365px;
     display: flex;
-    gap: 24px;
-    position: relative;
-}
-
-.potrait-posters img {
-    width: 220px;
-    height: 351px;
-}
-
-.potrait-posters .bookmarked-box {
+    gap: 28px;
     position: relative;
 }
 
 .potrait-box {
+    width: 234px;
+    height: 365px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .potrait-box:hover {
     transform: scale(0.95);
+}
+
+.potrait-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.potrait-posters .bookmarked-box {
+    position: relative;
 }
 
 .bookmark {
@@ -423,18 +430,18 @@
 }
 
 .footer {
+    bottom: 0;
     width: 100%;
-    height: 290px;
+    height: 284px;
     background-color: var(--page-header-background);
     border-top: 1px solid var(--outline-border);
     display: flex;
-    align-items: center;
     gap: 160px;
     padding: 60px 80px;
 }
 
 .footer-header {
-    width: 351px;
+    width: 251px;
     height: 91px;
     display: flex;
     flex-direction: column;
@@ -455,6 +462,7 @@
 }
 
 .genre {
+    width: 514px;
     height: 164px;
     display: flex;
     flex-direction: column;
@@ -486,6 +494,8 @@
 }
 
 .helps {
+    width: 150px;
+    height: 164px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -496,4 +506,289 @@
     display: flex;
     flex-direction: column;
     gap: 13px;
+}
+
+/* mobile responsive */
+
+@media only screen and (min-width: 154px) and (max-width: 480px) {
+    body {
+    min-width: 360px;
+    }
+
+    .header {
+        top: 0;
+        width: 100%;
+        height: 56px;
+        padding: 6px 20px;
+    }
+
+    .nav-box {
+        width: 268px;
+        height: 44px;
+        gap: 12px;
+    }
+
+    .nav-box img {
+        display: none;
+    }
+
+    .nav-box a:first-child:not(.nav a) {
+        width: 20px;
+        height: 44px;
+        background: url(/img/logo/mobile-chilllogo.svg); 
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .nav a {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0.2px;
+    }
+
+    .avatar-profile {
+        margin-right: 10px;
+    }
+
+    .avatar-profile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 225px;
+        align-items: center;
+    }
+
+    .preview-info {
+        width: 100%;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .button-box {
+        gap: 8px;
+    }
+
+    .hero-title {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .hero-title h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .hero-title p {
+        font-size: 12px;
+        line-height: 16.8px;
+        letter-spacing: 0.2px;
+    }
+
+    .interaction-btn {
+        width: 221px;
+    }
+
+    .start-btn {
+        width: 55px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 16.8px; 
+    }
+    .more-info {
+        width: 120px;
+        height: 30px;
+        border-radius: 48px;
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+
+    .moreinfo-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .age-restricted {
+        width: 30px;
+        height: 30px;
+        font-weight: 700px;
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+
+    .muted-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .muted-button img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .continueStreaming-section {
+        height: 235px;
+        gap: 20px;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .continueStreaming-section header h4, .topFilms-section header h4, .trendingFilm-section header h4, .newRelease-section header h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .landscape-posters .left-arrowbox {
+        display: none;
+    }
+
+    .landscape-posters .right-arrowbox {
+        display: none;
+    }
+
+    .landscape-posters {
+        height: 151px;
+        gap: 16px;
+    }
+
+    .landscape-box {
+        width: 309px;
+        height: 151px;
+    }
+
+    .landscape-box:hover {
+        transform: none;
+    }
+
+    .landscape-posters .landscape-box .description-film p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    .potrait-posters .left-arrowbox {
+        display: none;
+    }
+
+    .potrait-posters .right-arrowbox {
+        display: none;
+    }
+
+    .topFilms-section, .trendingFilm-section, .newRelease-section {
+        height: 189px;
+        gap: 20px;
+        padding: 0 0 0 20px;
+        overflow: hidden;
+    }
+    
+    .potrait-posters {
+        gap: 16px;
+    }
+
+    .potrait-box {
+        width: 96px;
+        height: 145px;
+    }
+
+    .potrait-box:hover {
+        transform: none;
+    }
+
+    .bookmark {
+        width: 14.82px;
+        height: 21.82px;
+        border-radius: 0 1.91px;
+        right: 4px;
+    }
+
+    .bookmark span {
+        font-size: 6.7px;
+        line-height: 9.37px;
+        letter-spacing: 0.1px;
+    }
+
+    .newEpisode-bookmark {
+        width: 44.56px;
+        height: 14px;
+        border-radius: 12px;
+        top: 7.65px;
+        left: 7.65px;
+    }
+
+    .newEpisode-bookmark span {
+        font-size: 5.74px;
+        line-height: 8px;
+        letter-spacing: 0.1px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        height: 193.75px;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+    }
+    
+    .footer-header {
+        width: 100%;
+        height: 57.75px;
+        gap: 16px;
+    }
+    
+    .footer-header img {
+        width: 84px;
+        height: 24.75px;
+    }
+    
+    .footer-header p {
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+    
+    .genre {
+        margin-top: 40px;
+    }
+    
+    .genre::after {
+        content: url('/img/icon/chevron-right.svg');
+    }
+    
+    .helps::after {
+        content: url('/img/icon/chevron-right.svg');
+    }
+    
+    .helps {
+        margin-top: 8px;
+    }
+
+    .genre, .helps {
+        width: 100%;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .genre .nav {
+        display: none;
+    }
+
+    .genre p, .helps p {
+        font-weight: 500;
+    }
+
+    .helps .nav {
+        display: none;
+    }
 }
