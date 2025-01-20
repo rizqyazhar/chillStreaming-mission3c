@@ -6,3 +6,494 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header {
+    top: 0;
+    width: 100%;
+    height: 94px;
+    padding: 25px 80px;
+    background-color: var(--page-header-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-box {
+    width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-box img {
+    width: 103px;
+    height: 44px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    color: var(--text-light-primary);
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--text-light-secondary);
+}
+
+.avatar-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatar-profile img {
+    width: 40px;
+    height: 40px;
+}
+
+.main {
+    background-color: var(--page-header-background);
+    padding-bottom: 50px;
+}
+
+.hero-section {
+    height: 587px;
+    background: url('/img/landscape/img-38.svg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.preview-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px;
+}
+
+.hero-title {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-light-primary);
+    cursor: default;
+}
+
+.hero-title h1 {
+    line-height: 52.8px;
+}
+
+.hero-title p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interaction-btn {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-btn {
+    width: 93px;
+    height: 45px;
+    border-radius: 48px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;    
+    background-color: var(--primary-300);
+    color: var(--text-light-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: var(--info-hover);
+}
+
+.start-btn:active {
+    background-color: var(--info-pressed);
+}
+
+.more-info {
+    width: 185px;
+    height: 45px;
+    border-radius: 24px;
+    background-color: var(--paper-background);
+    color: var(--text-light-primary);
+    border: none;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-info:hover {
+    background-color: var(--extra-background);
+}
+
+.more-info::before {
+    content: url('/img/icon/information-outline.svg');
+    width: 24px;
+    height: 24px;
+}
+
+.age-restricted {
+    width: 52px;
+    height: 45px;
+    border-radius: 24px;
+    background-color: transparent;
+    color: var(--text-light-secondary);
+    border: 1px solid var(--text-light-secondary);
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+}
+
+.muted-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    border: 1px solid var(--text-light-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.muted-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.muted-button:hover {
+    background-color: var(--extra-background);
+}
+
+.continueStreaming-section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 80px;
+}
+
+.continueStreaming-section header, .topFilms-section header, .trendingFilm-section header, .newRelease-section header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35.2px;
+    color: var(--text-light-primary);
+    cursor: default;
+}
+
+.landscape-posters .left-arrowbox {
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--body-background);
+    border: 1px solid var(--outline-border) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: -22px;
+    cursor: pointer;
+}
+
+.landscape-posters .right-arrowbox {
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--body-background);
+    border: 1px solid var(--outline-border) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: -29px;
+    cursor: pointer;
+}
+
+.landscape-posters {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    gap: 24px;
+    position: relative;
+}
+
+.landscape-posters img {
+    width: 281px;
+    height: 150px;
+}
+
+.landscape-posters div {
+    position: relative;
+}
+
+.landscape-posters div .description-film {
+    width: 100%;
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.landscape-posters div .description-film p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: var(--text-light-primary);
+}
+
+.landscape-box {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.landscape-box:hover {
+    transform: scale(0.95);
+}
+
+.star {
+    content: url('/img/icon/star.svg');
+    margin-right: 4px;
+}
+
+.potrait-posters .left-arrowbox {
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--body-background);
+    border: 1px solid var(--outline-border) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: -22px;
+    cursor: pointer;
+}
+
+.potrait-posters .right-arrowbox {
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--body-background);
+    border: 1px solid var(--outline-border) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    right: -29px;
+    cursor: pointer;
+}
+
+.landscape-posters .arrow-left, .potrait-posters .arrow-left {
+    width: 24px;
+    height: 24px;
+}
+
+.landscape-posters .arrow-right, .potrait-posters .arrow-right {
+    width: 24px;
+    height: 24px;
+}
+
+.topFilms-section, .trendingFilm-section, .newRelease-section {
+    width: 100%;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 80px;
+}
+
+.potrait-posters {
+    width: 100%;
+    height: 355px;
+    display: flex;
+    gap: 24px;
+    position: relative;
+}
+
+.potrait-posters img {
+    width: 220px;
+    height: 351px;
+}
+
+.potrait-posters .bookmarked-box {
+    position: relative;
+}
+
+.potrait-box {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.potrait-box:hover {
+    transform: scale(0.95);
+}
+
+.bookmark {
+    width: 31px;
+    height: 48px;
+    background-color: var(--error-pressed);
+    border-radius: 0 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 12px;
+}
+
+.bookmark span {
+    color: var(--text-light-primary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+.newEpisode-bookmark {
+    width: 104px;
+    height: 28px;
+    border-radius: 24px;
+    background-color: var(--primary-300);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.newEpisode-bookmark span {
+    color: var(--text-light-primary);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+}
+
+.footer {
+    width: 100%;
+    height: 290px;
+    background-color: var(--page-header-background);
+    border-top: 1px solid var(--outline-border);
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    padding: 60px 80px;
+}
+
+.footer-header {
+    width: 351px;
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+}
+
+.footer-header img {
+    width: 163px;
+    height: 44px;
+}
+
+.footer-header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.4px;
+    color: var(--text-light-secondary);
+}
+
+.genre {
+    height: 164px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.genre p, .helps p {
+    color: var(--text-light-primary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+}
+
+.genre .nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 13px 28px;
+}
+
+.genre .nav a, .helps .nav a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+}
+
+.helps {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.helps .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
